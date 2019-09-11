@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>まふまふ Official Website</title> <!-- 模写サイト１ -->
+
+  <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- Google Fontの指定 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flickitys/flickity.css">
+  <!-- JavaScriptの読み込み -->
+	  <script src="flickitys/flickity.pkgd.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- トグルボタン -->
+    <script>
+      $(function() {
+        $("#menubtn").click(function() {
+          $("#menu").slideToggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner1 wrapper">
+        <a href="index.html"><img src="images/logo_sp.png" alt="" width="134" height="34"></a>
+        <div class="toguru-btn">
+          <button type="button" id="menubtn">
+            <i class="fa fa-bars"></i><span>MENU</span>
+          </button>
+        </div>
+      </div>
+      <nav class="menu " id="menu">
+        <div class="menu-list wrapper">
+          <ul>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">LIVE</a></li>
+            <li><a href="#">DISCOGRAPHY</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">GOODS</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </div>
+        <div class="sns-icon">
+          <ul>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><img src="images/ico_niconico.png" alt="" width=22 height=22></a></li>
+          </ul>
+        </div>
+      <!--
+        <div class="header-img">
+        <a href="index.html"><img src="images/logo.png" alt=""> </a>
+      </div>
+    -->
+      </nav>
+    </header>
+
+    <!-- flickity -->
+    <div class="main-img">
+      <img src="images/slide0620b.jpg" alt="WorldEnd">
+      <img src="images/Mafu-HP-TOP-06-2.jpg" alt="Kagurairo">
+      <img src="images/e6ae2c75012183c030612cdc8497b692.jpg" alt="Hikirai">
+    </div>
+    <script type="text/javascript">
+      // スライドコンテンツを後ほど操作するための配列 (グローバル変数)
+      var flickity = [];
+
+      // ページ内の[.flickity]のエレメントを取得する
+      var elms = document.getElementsByClassName( "main-img" ) ;
+
+      // [elms]全てに、ループ処理でFlickityを適用する
+      for( var i=0,l=elms.length; l>i; i++ ){
+        flickity[i] = new Flickity( elms[i] , {wrapAround: true, initialIndex: 1, contain: false, pageDots: false, prevNextButtons: false} ) ;
+      }
+    </script><!-- /flickity -->
+
+    <div class="youtube">
+      <img src="images/tit_channel.png" alt="yt-mafumafu" class="yt-title wrapper">
+      <div class="yt-list wrapper">
+        <div class="yt-box">
+          <div class="channel">
+            <iframe src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>Music Video</p>
+        </div>
+        <div class="yt-box">
+          <div class="channel">
+            <iframe src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_D68FR4jAQlBQ5uAKJc_LWW&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>歌ってみた</p>
+        </div>
+        <div class="yt-box">
+          <div class="channel">
+            <iframe src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_AVZgiJ5Yjr5qLLA574Inf7&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>変な動画</p>
+        </div>
+        <div class="yt-box">
+          <div class="channel">
+            <iframe src="https://www.youtube.com/embed/?list=PLLkGVD9RIO_DMhx9rnG_YDLN_rG-cqefV&v=" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>ゲーム実況</p>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/channel/UCOTR1tcOAhjgi6YukrPpZxg"><img src="images/btn_yt.png" class="yt-logo" alt="yt-channel" style="width:100px; height:22px;"></a>
+    </div>  <!-- /youtube -->
+
+    <div class="index-news wrapper kiji">
+      <h1>NEWS</h1>
+      <article class="ar-news">
+        <a href="#">
+          <h2>2019.08.13</h2>
+          <h3>アルバム 特典内容＆デザイン公開</h3>
+        </a>
+      </article>
+      <article class="ar-news">
+        <a href="#">
+          <h2>2019.08.13</h2>
+          <h3>「神楽色アーティファクト」詳細発表！全20曲収録！</h3>
+        </a>
+      </article>
+      <article class="ar-news">
+        <a href="#">
+          <h2>2019.07.29</h2>
+          <h3>まふまふ×Simejiコラボ！</h3>
+        </a>
+      </article>
+      <button type="button" name="button" class="btn-black">MORE ▶︎</button>
+        <img src="images/img_beru_c.png" alt="beru_hair" class="image-chair">
+    </div>
+
+    <div class="index-live wrapper kiji">
+      <h1>LIVE</h1>
+      <article class="ar-live">
+        <a href="#">
+        <div class="sub-caption">
+          <p>そらまふうらさかのふゆやすみ〜クリスマス会〜</p>
+          <h2>2019.12.20(fri)</h2>
+        </div>
+        <h3>横浜アリーナ</h3>
+        </a>
+      </article>
+      <article class="ar-live">
+        <a href="#">
+        <div class="sub-caption">
+          <p>そらまふうらさかのふゆやすみ〜クリスマス会〜</p>
+          <h2>2019.12.24(tue)</h2>
+        </div>
+        <h3>大阪城ホール</h3>
+        </a>
+      </article>
+      <article class="ar-live">
+        <a href="#">
+        <div class="sub-caption">
+          <p>そらまふうらさかのふゆやすみ〜クリスマス会〜</p>
+          <h2>2019.12.25(wed)</h2>
+        </div>
+        <h3>大阪城ホール</h3>
+        </a>
+      </article>
+      <button type="button" name="button" class="btn-black">MORE ▶︎</button>
+        <img src="images/img_beru_black.png" alt="beru_black" class="image-black">
+        <img src="images/img_beru_white.png" alt="beru_white" class="image-white">
+    </div>
+
+    <div class="index-contents">
+      <div class="index-discography wrapper kiji">
+        <h1>DISCOGRAPHY</h1>
+        <!-- flickity -->
+        <div class="flickity2">
+          <i class="fas fa-caret-left"></i>
+          <div class="in-flick">
+            <img src="images/77ff30e7b67556447ee302bc207f4afd-1.jpg" alt="kagurairo">
+            <img src="images/cdce3639f5d8c0600acde75a2a36310a.png" alt="traveller">
+            <img src="images/resize_image02.jpg" alt="ashitairo">
+            <img src="images/resize_image-1-1.jpeg" alt="anti1">
+            <img src="images/resize_image-1.jpeg" alt="anti2">
+          </div>
+          <i class="fas fa-caret-right"></i>
+        </div>
+        <script type="text/javascript">
+          // スライドコンテンツを後ほど操作するための配列 (グローバル変数)
+          var flickity = [];
+          // ページ内の[.flickity]のエレメントを取得する
+          var elms = document.getElementsByClassName( "in-flick" ) ;
+          // [elms]全てに、ループ処理でFlickityを適用する
+          for( var i=0,l=elms.length; l>i; i++ )
+          {
+            flickity[i] = new Flickity( elms[i] , {wrapAround: true, initialIndex: 0, contain: false, pageDots: false, prevNextButtons: false} ) ;
+          }
+        </script>  <!-- /flickity -->
+        <button type="button" name="button" class="btn-black" style="width:236px;height:28px;">MORE ▶︎</button>
+      </div>
+
+      <div class="index-twitter">
+        <a class="twitter-timeline" data-lang="ja" data-width="520" data-height="320" data-theme="light" data-link-color="#2B7BB9" data-chrome="nofooter" href="https://twitter.com/uni_mafumafu?ref_src=twsrc%5Etfw">Tweets by uni_mafumafu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+    <div class="sns-share wrapper">
+      <a href="#"><img src="images/bn_mafumafu_website.jpg" alt="mafumafu_website"></a>
+      <a href="#"><img src="images/bn_niconico.jpg" alt="niconico"></a>
+      <a href="#"><img src="images/bn_line.jpg" alt="line"></a>
+    </div>
+
+    <footer>
+      <div class="footer-content wrapper">
+        <ul>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><img src="images/ico_niconico.png" alt="" width=22 height=22></a></li>
+        </ul>
+        <div class="copyrights">
+          <small>&copy;2019 uni-mafumafu.jp</small>
+        </div>
+      </div>
+    </footer>
+  </body>
