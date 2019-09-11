@@ -1,6 +1,5 @@
 # mafumafu-v.2
 
-cats-park.github.io
 まふまふさんのWebサイトの写経v.2
 
 9/11 767px以下のサイズのページ完成
