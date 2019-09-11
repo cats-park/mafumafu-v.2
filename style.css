@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/* 共通部分------------------------------------------------------------------- */
+@font-face {
+	font-family: 'Maven Pro';
+	src: url(maven-pro/MavenPro-Black.ttf);
+}
+
+html {
+  font-size: 100%;
+	margin:0;
+}
+body {
+  font-family: YuGothic, 游ゴシック, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+  max-width: 100%;
+  background-image:url(images/wall_30.png);
+  background-repeat: repeat;
+}
+.wrapper {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* INDEX.HTML------------------------------------------------------------------- */
+/* header */
+header {
+  width: 100%;
+  background-color: #000;
+  height: 61px;
+}
+.site-header {
+  position: fixed;
+  z-index: 30;
+}
+.header-inner1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+}
+
+/* トグルボタン */
+#menubtn {
+  cursor: pointer;
+}
+#menubtn:hover {
+}
+#menubtn:focus {
+  outline: none;
+}
+#menubtn i {
+  color: #fff;
+  font-size: 30px;
+}
+#menubtn span {
+  display: inline-block;
+  text-indent: -9999px;
+}
+/* ナビゲーションメニュー（縦並び） */
+#menu {
+  display: none;
+  width: 100%;
+  padding-top: 11px;
+  background-color: #000;
+}
+.menu-list li {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9px;
+  list-style: none;
+  background-color: #fff;
+  height: 28px;
+}
+.menu-list li a {
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  padding-top: 4px;
+}
+.sns-icon ul {
+  display: flex;
+  justify-content: center;
+  height: 43px;
+}
+.sns-icon li {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.sns-icon i, .sns-icon img {
+  color: #fff;
+}
+.sns-icon .fa-twitter {
+  font-size: 22px;
+}
+.sns-icon .fa-youtube {
+  font-size: 22px;
+  margin: auto 19px;
+}
+
+/* main-img------------------------------------------------------------------- */
+.main-img img {
+  width: 90%;
+  height: auto;
+  margin-top: 61px;
+  padding: 10px 5px;
+  box-sizing: content-box;
+}
+
+/* youtube------------------------------------------------------------------- */
+.youtube {
+  background-color: #000;
+  text-align: center;
+}
+.youtube .yt-title {
+  width:441px;
+  height:32px;
+  margin-top: 34px;
+  margin-bottom: 26px;
+}
+.youtube .yt-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.youtube .yt-box {
+  border-left: solid 1px #fff;
+  padding: 10px 20px 12px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.youtube .yt-box p {
+  color: #fff;
+  padding-top: 10px;
+}
+.youtube .yt-box:nth-child(even) {
+  border-right: solid 1px #fff;
+}
+.youtube iframe {
+  max-width: 100%;
+  height: auto;
+  box-sizing: content-box;
+}
+.channel {
+   position: relative;
+   padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+   height: 0;
+   overflow: hidden;
+}
+.channel iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: solid 1px #fff;
+   box-sizing: border-box;
+}
+.youtube a {
+  padding: 30px 0 30px 0;
+}
+
+
+/* kiji------------------------------------------------------------------- */
+.kiji {
+	border: solid 1px #333;
+	margin-top: 30px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.kiji article {
+	margin: 0 30px 20px;
+	border-bottom: solid 1px #000;
+	box-sizing: border-box;
+}
+.kiji article:hover {
+	opacity: 0.7; /*透過*/
+}
+.kiji h1 {
+	padding: 30px 0;
+	font-family: 'Cinzel', serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+	color: #000;
+}
+.kiji h2 { /* 日付 */
+	font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #676767;
+	text-align: left;
+	margin-top: 4px;
+	margin-bottom: 6px;
+}
+.kiji h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
+	text-align: left;
+	margin-bottom: 12px;
+}
+.kiji p {
+	text-align: left;
+	color: #333;
+}
+.btn-black {
+	margin: 18px 0 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  width:200px;
+  height: 26px;
+  background-color: #333;
+  border: 2px solid #333;
+	box-sizing: border-box;
+	vertical-align: middle;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 12px;
+	color: #fff;
+}
+.btn-black:hover {
+  border: 2px solid #333;
+  background-color:  #fff;
+  color: #333;
+}
+
+/* index-news------------------------------------------------------------------- */
+.index-news {
+	position: relative;
+}
+.index-news .image-chair{
+	width: 62px;
+	height: 102px;
+	position: absolute;
+	top: 8px;
+	right: 18px;;
+}
+
+/* index-live------------------------------------------------------------------- */
+.index-live {
+	position: relative;
+}
+.index-live .sub-caption {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 4px;
+	margin-bottom: 6px;
+}
+.index-live .sub-caption p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 12px;
+	margin: auto 3px auto 0;
+	padding: 3px 5px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #DF416D;
+
+
+}
+.image-black {
+	width: 93px;
+	height: 190px;
+	position: absolute;
+	top: -136px;
+	left: -10px;
+}
+.image-white {
+	width: 78px;
+	height: 182px;
+	position: absolute;
+	top:360px;
+	right:-12px;
+}
+
+
+/* index-discography------------------------------------------------------------------- */
+.index-discography .flickity2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 25px 0 22px;
+}
+.index-discography .flickity2 i {
+	font-size: 39px;
+}
+.index-discography .in-flick {
+	width: 194px;
+	height: 194px;
+	border: solid 2px #333;
+	box-sizing: border-box;
+	margin: 0 20px;
+}
+.index-discography .in-flick img {
+	width: 192px;
+	height: 192px;
+}
+
+/* index-twitter------------------------------------------------------------------- */
+.index-twitter  {
+	margin: 30px 0 45px;
+	text-align: center;
+}
+
+
+/* sns-share------------------------------------------------------------------- */
+.sns-share {
+	text-align: center;
+}
+.sns-share img {
+	width: 100%;
+	height: auto;
+	border: solid 1px #333;
+}
+.sns-share a:nth-child(even) {
+	margin: 10px 0 ;
+}
+
+/* footer------------------------------------------------------------------- */
+footer {
+  background-color: #000;
+  height: 92px;
+	margin-top: 55px;
+}
+footer .footer-content {
+	padding-top: 25px;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+footer i {
+	color: #fff;
+	font-size: 22px;
+}
+footer .fa-youtube {
+	margin: 0 22px;
+}
+footer .copyrights {
+	padding-top: 8px;
+}
+footer small {
+	color: #fff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+/* ##########768px以上######### */
+@media (min-width: 768px) {
+  /* トグルボタン */
+  #menubtn {
+    display: none;
+  }
+  /* ナビゲーション */
+  #menu {
+    display: block !important;
+  }
+}
