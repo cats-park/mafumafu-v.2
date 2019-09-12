@@ -54,9 +54,6 @@ header {
   align-items: center;
   padding-top: 11px;
 }
-.toguru-btn {
-  cursor: pointer;
-}
 /* トグルボタン */
 #menubtn {
   cursor: pointer;
