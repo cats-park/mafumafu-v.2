@@ -23,7 +23,8 @@
   <!-- トグルボタン -->
     <script type="text/javascript">
       $(function() {
-        $("#menubtn").click(function() {
+        var clickEventType = (( window.ontouchstart!==null ) ? 'click':'touchend');
+        $("#menubtn").clickEventType(function() {
           $("#menu").slideToggle();
         });
       });
