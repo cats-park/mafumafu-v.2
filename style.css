@@ -20,6 +20,7 @@ body {
   max-width: 100%;
   background-image:url(images/wall_30.png);
   background-repeat: repeat;
+  letter-spacing: -.1px;
 }
 .wrapper {
   width: 90%;
