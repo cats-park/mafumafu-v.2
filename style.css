@@ -54,6 +54,7 @@ header {
   align-items: center;
   padding-top: 11px;
 }
+
 /* トグルボタン */
 #menubtn {
   cursor: pointer;
@@ -133,8 +134,8 @@ header {
   text-align: center;
 }
 .youtube .yt-title {
-  width:441px;
-  height:32px;
+  width: 72%;
+  height:auto;
   margin-top: 34px;
   margin-bottom: 26px;
 }
