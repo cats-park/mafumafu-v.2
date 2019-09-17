@@ -17,33 +17,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickitys/flickity.css">
   <!-- JavaScriptの読み込み -->
-    <script src="flickitys/flickity.pkgd.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+	  <script src="flickitys/flickity.pkgd.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  
-  </head>
-
-  <body>
-    <!-- トグルボタン -->
+  <!-- トグルボタン -->
     <script type="text/javascript">
       $(function() {
-        var clickEventType = (( window.ontouchstart!==null ) ? 'click':'touchend');
-        $("#menubtn").clickEventType(function() {
+        $("#menubtn").click(function() {
           $("#menu").slideToggle();
         });
       });
     </script>
-    <header class="site-header">
-      <div class="header-inner1 wrapper">
-        <a href="index.html"><img src="images/logo_sp.png" alt="" width="134" height="34"></a>
-        <div class="toguru-btn">
-          <button type="button" id="menubtn">
-            <i class="fa fa-bars"></i><span>MENU</span>
-          </button>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner1">
+        <div class="header-upper wrapper">
+          <a href="index.html" class="header-img">
+            <img src="images/img_beru_all.png" alt="" class="header-gazou">
+            <img src="images/logo.png" alt="" class="header-logo">
+          </a>
+          <div class="sns-icon">
+            <ul>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#"><img src="images/ico_niconico_pc.png" alt="" width=22 height=22></a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <nav class="menu " id="menu">
-        <div class="menu-list wrapper">
+        <div class="header-under wrapper">
           <ul>
             <li><a href="#">NEWS</a></li>
             <li><a href="#">PROFILE</a></li>
@@ -54,19 +57,38 @@
             <li><a href="#">BLOG</a></li>
           </ul>
         </div>
-        <div class="sns-icon">
-          <ul>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><img src="images/ico_niconico.png" alt="" width=22 height=22></a></li>
-          </ul>
-        </div>
-      <!--
-        <div class="header-img">
-        <a href="index.html"><img src="images/logo.png" alt=""> </a>
       </div>
-    -->
-      </nav>
+
+      <div class="header-inner2">
+        <div class="header-bar wrapper">
+          <a href="index.html"><img src="images/logo_sp.png" alt="" width="134" height="34"></a>
+          <div class="toguru-btn">
+            <button type="button" id="menubtn">
+              <i class="fa fa-bars"></i><span>MENU</span>
+            </button>
+          </div>
+        </div>
+        <nav class="menu " id="menu">
+          <div class="menu-list wrapper">
+            <ul>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">PROFILE</a></li>
+              <li><a href="#">LIVE</a></li>
+              <li><a href="#">DISCOGRAPHY</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">GOODS</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+          </div>
+          <div class="sns-icon">
+            <ul>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#"><img src="images/ico_niconico.png" alt="" width=22 height=22></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- flickity -->
@@ -123,6 +145,12 @@
       <h1>NEWS</h1>
       <article class="ar-news">
         <a href="#">
+          <h2>2019.09.12</h2>
+          <h3>東京ドームでのワンマンライブ決定！</h3>
+        </a>
+      </article>
+      <article class="ar-news">
+        <a href="#">
           <h2>2019.08.13</h2>
           <h3>アルバム 特典内容＆デザイン公開</h3>
         </a>
@@ -131,12 +159,6 @@
         <a href="#">
           <h2>2019.08.13</h2>
           <h3>「神楽色アーティファクト」詳細発表！全20曲収録！</h3>
-        </a>
-      </article>
-      <article class="ar-news">
-        <a href="#">
-          <h2>2019.07.29</h2>
-          <h3>まふまふ×Simejiコラボ！</h3>
         </a>
       </article>
       <button type="button" name="button" class="btn-black">MORE ▶︎</button>
