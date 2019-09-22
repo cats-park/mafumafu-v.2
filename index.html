@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>まふまふ Official Website</title> <!-- 模写サイト１ -->
 
-  <!-- CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <!-- Google Fontの指定 -->
+    <!-- Google Fontの指定 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
     <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="flickitys/flickity.css">
-  <!-- JavaScriptの読み込み -->
+    <!-- JavaScript,jQueryの読み込み -->
 	  <script src="flickitys/flickity.pkgd.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  <!-- トグルボタン -->
+    <!-- トグルボタン -->
     <script type="text/javascript">
       $(function() {
         $("#menubtn").click(function() {
@@ -42,7 +42,7 @@
             <ul>
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="#"><img src="images/ico_niconico_pc.png" alt="" width=22 height=22></a></li>
+              <li><a href="#"><img src="images/ico_niconico_pc.png" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -61,7 +61,7 @@
 
       <div class="header-inner2">
         <div class="header-bar wrapper">
-          <a href="index.html"><img src="images/logo_sp.png" alt="" width="134" height="34"></a>
+          <a href="index.html"><img src="images/logo_sp.png" alt=""></a>
           <div class="toguru-btn">
             <button type="button" id="menubtn">
               <i class="fa fa-bars"></i><span>MENU</span>
@@ -100,10 +100,8 @@
     <script type="text/javascript">
       // スライドコンテンツを後ほど操作するための配列 (グローバル変数)
       var flickity = [];
-
       // ページ内の[.flickity]のエレメントを取得する
       var elms = document.getElementsByClassName( "main-img" ) ;
-
       // [elms]全てに、ループ処理でFlickityを適用する
       for( var i=0,l=elms.length; l>i; i++ ){
         flickity[i] = new Flickity( elms[i] , {wrapAround: true, initialIndex: 1, contain: false, pageDots: false, prevNextButtons: false} ) ;
@@ -138,7 +136,7 @@
           <p>ゲーム実況</p>
         </div>
       </div>
-      <a href="https://www.youtube.com/channel/UCOTR1tcOAhjgi6YukrPpZxg"><img src="images/btn_yt.png" class="yt-logo" alt="yt-channel" style="width:100px; height:22px;"></a>
+      <a href="https://www.youtube.com/channel/UCOTR1tcOAhjgi6YukrPpZxg"><img src="images/btn_yt.png" class="yt-logo" alt="yt-channel"></a>
     </div>  <!-- /youtube -->
 
     <div class="index-news wrapper kiji">
@@ -199,8 +197,8 @@
         <img src="images/img_beru_white.png" alt="beru_white" class="image-white">
     </div>
 
-    <div class="index-contents">
-      <div class="index-discography wrapper kiji">
+    <div class="index-contents wrapper">
+      <div class="index-discography kiji">
         <h1>DISCOGRAPHY</h1>
         <!-- flickity -->
         <div class="flickity2">
@@ -225,12 +223,13 @@
             flickity[i] = new Flickity( elms[i] , {wrapAround: true, initialIndex: 0, contain: false, pageDots: false, prevNextButtons: false} ) ;
           }
         </script>  <!-- /flickity -->
-        <button type="button" name="button" class="btn-black" style="width:236px;height:28px;">MORE ▶︎</button>
+        <button type="button" name="button" class="btn-black disc-btn" style="width:236px;height:28px;">MORE ▶︎</button>
       </div>
 
       <div class="index-twitter">
         <a class="twitter-timeline" data-lang="ja" data-width="520" data-height="320" data-theme="light" data-link-color="#2B7BB9" data-chrome="nofooter" href="https://twitter.com/uni_mafumafu?ref_src=twsrc%5Etfw">Tweets by uni_mafumafu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
+    </div>
 
     <div class="sns-share wrapper">
       <a href="#"><img src="images/bn_mafumafu_website.jpg" alt="mafumafu_website"></a>
