@@ -5,7 +5,6 @@
 	font-family: 'Maven Pro';
 	src: url(maven-pro/MavenPro-Black.ttf);
 }
-
 html {
   font-size: 100%;
 	margin:0;
@@ -43,7 +42,6 @@ header {
 .header-inner1 {
 	width: 100%;
 	height: 150px;
-	border-bottom: solid 1px #000;
 }
 .header-inner1 .header-upper {
 	display: flex;
@@ -81,6 +79,10 @@ header {
   margin: auto 16px;
 	color: #000;
 }
+.sns-share img {
+	width: 22px;
+	height: 22px;
+}
 .header-inner1 .header-under ul {
 	display: flex;
 }
@@ -102,9 +104,11 @@ header {
 .main-img img {
   width: 90%;
   height: auto;
-  margin-top: 61px;
-  padding: 10px 5px;
+  /*margin-top: 61px;*/
+  padding: 71px 5px 10px;
   box-sizing: content-box;
+	border-top: solid 1px #333;
+	border-bottom: solid 1px #333;
 }
 
 /* youtube------------------------------------------------------------------- */
@@ -113,7 +117,7 @@ header {
   text-align: center;
 }
 .youtube .yt-title {
-  width: 72%;
+  max-width: 441px;
   height:auto;
   margin-top: 34px;
   margin-bottom: 26px;
@@ -143,7 +147,7 @@ header {
 }
 .channel {
    position: relative;
-   padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+   padding-bottom: 56%; /*アスペクト比 16:9の場合の縦幅(56.25%)*/
    height: 0;
    overflow: hidden;
 }
@@ -157,7 +161,11 @@ header {
    box-sizing: border-box;
 }
 .youtube a {
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
+}
+.youtube a img {
+	width: 100px;
+	height:22px;
 }
 
 
@@ -268,8 +276,6 @@ header {
 	border-radius: 5px;
 	color: #fff;
 	background-color: #DF416D;
-
-
 }
 .image-black {
 	width: 93px;
@@ -380,6 +386,10 @@ footer small {
 	  align-items: center;
 	  padding-top: 11px;
 	}
+	.header-bar img {
+		width: 134px;
+		height: 34px;
+	}
 	/* トグルボタン */
 	#menubtn {
 	  cursor: pointer;
@@ -442,6 +452,9 @@ footer small {
 	  font-size: 22px;
 	  margin: auto 19px;
 	}
+	.header-change {
+		display: none;
+	}
 
 }
 
@@ -468,27 +481,21 @@ footer small {
 		font-size: 11px;
 		line-height: 11px;
 	}
+
 }
 
 @media (min-width: 900px){
-	/* kiji------------------------------------------------------------------- */
-	.kiji {
-		border: solid 1px #333;
-		margin-top: 30px;
-		box-sizing: border-box;
-		background-color: rgba(255, 255, 255, 0.4);
+	/* main-img------------------------------------------------------------------- */
+	.main-img img {
+	  /*margin-top: 61px;*/
+	  padding: 30px 15px 30px;
 	}
+	/* kiji------------------------------------------------------------------- */
 	.kiji article {
 		width: 68.5%;
 		margin: 0 auto 20px;
-		border-bottom: solid 1px #000;
-		box-sizing: border-box;
-	}
-	.kiji article:hover {
-		opacity: 0.7;
 	}
 	.kiji h1 { /* タイトル */
-		padding: 30px 0;
 		font-weight: 700;
 		font-size: 48px;
 		line-height: 58px;
@@ -496,112 +503,127 @@ footer small {
 	.kiji h2 { /* 日付 */
 	  font-size: 14px;
 	  line-height: 14px;
-		margin-top: 4px;
-		margin-bottom: 6px;
 	}
 	.kiji h3 { /* 見出し */
 		font-size: 16px;
 		line-height: 24px;
-		margin-bottom: 12px;
-	}
-	.kiji p { /* 小見出し */
-		text-align: left;
-		color: #333;
 	}
 	.btn-black {
-		margin: 18px 0 50px;
+		margin: 18px 0 55px;
 	  width:260px;
 	  height: 28px;
-		vertical-align: middle;
 		font-size: 14px;
 		line-height: 14px;
-		color: #fff;
 	}
-	.btn-black:hover {
-	  border: 2px solid #333;
-	  background-color:  #fff;
-	  color: #000;
-	}
-
 	/* index-news------------------------------------------------------------------- */
-	.index-news {
-		position: relative;
-	}
 	.index-news .image-chair{
-		width: 62px;
-		height: 102px;
-		position: absolute;
-		top: 8px;
-		right: 18px;;
+		width: 172px;
+		height: 283px;
+		top: -35px;
+		right: -45px;
 	}
-
 	/* index-live------------------------------------------------------------------- */
-	.index-live {
-		position: relative;
-	}
-	.index-live .sub-caption {
-		display: flex;
-		justify-content: flex-start;
-		margin-top: 4px;
-		margin-bottom: 6px;
-	}
-	.index-live .sub-caption p {
-		font-style: normal;
-		font-weight: 400;
-		font-size: 10px;
-		line-height: 12px;
-		margin: auto 3px auto 0;
-		padding: 3px 5px;
-		border-radius: 5px;
-		color: #fff;
-		background-color: #DF416D;
-	}
 	.image-black {
-		width: 93px;
-		height: 190px;
-		position: absolute;
-		top: -136px;
-		left: -10px;
+		width: 185px;
+		height: 379px;
+		top: -267px;
+		left: -45px;
 	}
 	.image-white {
-		width: 78px;
-		height: 182px;
-		position: absolute;
-		top:360px;
-		right:-12px;
+		width: 154px;
+		height: 359px;
+		top: 183px;
+		right: -45px;
+	}
+	/* index-contents------------------------------------------------------------------- */
+	.index-contents {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 60px;
 	}
 
 	/* index-discography------------------------------------------------------------------- */
-	.index-discography .flickity2 {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 25px 0 22px;
+	.index-discography {
+		width: 48%;
 	}
-	.index-discography .flickity2 i {
-		font-size: 39px;
+	.index-discography .flickity2 {
+		margin: 0 0 22px;
 	}
 	.index-discography .in-flick {
-		width: 194px;
-		height: 194px;
-		border: solid 2px #333;
-		box-sizing: border-box;
-		margin: 0 20px;
+		width: 236px;
+		height: 236px;
+	}
+	.index-discography .flickity2 i {
+		font-size: 57px;
 	}
 	.index-discography .in-flick img {
-		width: 192px;
-		height: 192px;
+		width: 234px;
+		height: 232px;
 	}
-
 	/* index-twitter------------------------------------------------------------------- */
 	.index-twitter  {
-		margin: 30px 0 45px;
-		text-align: center;
+		width: 48%;
 	}
+	/* sns-share------------------------------------------------------------------- */
+	.sns-share {
+		display: flex;
+		margin-top: 80px;
+	}
+	.sns-share a:nth-child(even) {
+		margin: 0 20px;
+	}
+	/* footer------------------------------------------------------------------- */
+	footer {
+		margin-top: 80px;
+	}
+
 }
 @media (min-width: 960px){
+	.header-upper {
+		position: relative;
+	}
+	.header-upper .sns-icon {
+		position: absolute;
+		top: 82px;
+		right: 0;
+	}
+	/* main-img------------------------------------------------------------------- */
+	.main-img img {
+		/*margin-top: 61px;*/
+		padding: 20px 15px 20px;
+	}
+	/* youtube------------------------------------------------------------------- */
+	.youtube {
+		margin: 35px 0 60px;
+	}
+	.youtube .yt-list {
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.youtube .yt-box {
+	  border-left: solid 1px #fff;
+	  padding: 10px 10px 12px 10px;
+	}
+	.youtube .yt-box:nth-child(even) {
+	  border-right: none;
+	}
+	.youtube .yt-box:nth-child(4) {
+		border-right: solid 1px #fff;
+	}
+	.youtube a {
+	  padding: 40px 0;
+	}
+	.youtube a img {
+		width: 110px;
+		height: 24px;
+	}
 
 }
 @media (min-width: 1024px){
-
+	.wrapper {
+		width: 960px;
+	}
+	/* main-img------------------------------------------------------------------- */
+	.main-img img {
+	  width: 960px;
+	}
 }
